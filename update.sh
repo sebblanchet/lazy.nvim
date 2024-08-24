@@ -1,9 +1,16 @@
 #!/usr/bin/env bash
 
-rm -rfv ~/.config/nvim/*
-rm -rfv ~/.local/share/nvim/*
-rm -rfv ~/.local/state/nvim/*
-rm -rfv ~/.cache/nvim/*
+set -ex
 
-mkdir p ~/.config/nvim
+_clean() {
+  local dir=${1:?}
+  mkdir -p "$dir"
+  rm -rfv "${dir:?}/*"
+}
+
+_clean ~/.config/nvim
+_clean ~/.local/share/nvim
+_clean ~/.local/state/nvim
+_clean ~/.cache/nvim
+
 cp -rfv . ~/.config/nvim/

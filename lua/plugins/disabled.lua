@@ -5,4 +5,6 @@ return {
   { "hadronized/hop.nvim ", enabled = false },
   -- shut up
   { "rcarriga/nvim-notify", enabled = false },
+  -- bad
+  { "echasnovski/mini.pairs", enabled = false },
 }
