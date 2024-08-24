@@ -5,7 +5,7 @@ return {
     opts = {
       adapters = {
         "neotest-plenary",
-        "nvim-neotest/neotest-python",
+        "neotest-python",
         "rustaceanvim.neotest",
       },
     },
