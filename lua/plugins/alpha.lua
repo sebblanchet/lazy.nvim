@@ -19,7 +19,7 @@ return {
 
     -- stylua: ignore
     dashboard.section.buttons.val = {
-      dashboard.button("ff", " " .. " Find file",       LazyVim.pick()),
+      dashboard.button("ff", " " .. " Find file", "<cmd>Telescope find_files<cr>"),
       dashboard.button("fg", " " .. " Find text",       LazyVim.pick("live_grep")),
       dashboard.button("n", " " .. " New file",        [[<cmd> ene <BAR> startinsert <cr>]]),
       dashboard.button("r", " " .. " Recent files",    LazyVim.pick("oldfiles")),

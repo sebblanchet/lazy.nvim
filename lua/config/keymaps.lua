@@ -16,9 +16,6 @@ map("n", "<leader>d", '"_d')
 map("v", "<leader>d", '"_d')
 map("v", "<leader>dd", '"_dd')
 
--- go to previous file
-map("n", "<leader>b", ":e#<CR>", { silent = true })
-
 -- search current word
 map(
   "n",
@@ -35,3 +32,14 @@ map("", "<up>", "<nop>")
 map("", "<down>", "<nop>")
 map("", "<left>", "<nop>")
 map("", "<right>", "<nop>")
+
+-- toggle inlay hints
+-- vim.keymap.set("n", "<leader>i", function()
+--   vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ 0 }), { 0 })
+-- end)
+
+-- basic file nav
+-- map("n", "<leader>b", ":e#<CR>", { silent = true })
+map("n", "<leader>x", ":bd<cr>")
+map("n", "<leader>b", ":BufferLineCyclePrev<cr>")
+map("n", "<leader>B", ":BufferLineCycleNext<cr>")
