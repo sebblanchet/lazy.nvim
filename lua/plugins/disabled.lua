@@ -7,4 +7,6 @@ return {
   { "rcarriga/nvim-notify", enabled = false },
   -- bad
   { "echasnovski/mini.pairs", enabled = false },
+  -- nope
+  { "folke/flash.nvim", enabled = false },
 }
