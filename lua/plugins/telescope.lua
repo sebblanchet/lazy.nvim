@@ -1,5 +1,6 @@
 return {
   "nvim-telescope/telescope.nvim",
+  lazy = false,
   keys = {
     -- disable the keymap to grep files
     { "<leader>/", false },
